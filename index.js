@@ -2,9 +2,16 @@ function takeANumber(katzDeliLine, person) {
   var count = katzDeliLine.length + 1;
   var message = `Welcome, ${person}. You are number ${count} in line.`;
   var newLine = katzDeliLine;
-  newLine.push(person);
+  newLine.
   return message;
 }
+var count = 1; 
+function takeANumber() {
+  var message = `Welcome, you are holding ticket number ${count} .`;
+  count += 1; 
+  return message;
+}
+
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!";
